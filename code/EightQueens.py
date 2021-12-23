@@ -47,9 +47,9 @@ class board(GridLayout):
         for j in range(len(self.problem)):
             for i in range (len(self.problem)):
                 if i == self.all[len(self.all)-1][j]:
-                    self.add_widget(Image(source = 'queen.jpg'))
+                    self.add_widget(Image(source = 'pics/queen.jpg'))
                 else:
-                    self.add_widget(Image(source = 'blenk.jpg'))
+                    self.add_widget(Image(source = 'pics/blenk.jpg'))
 
     def click(self,touch):
         self.bruteForce(0)
