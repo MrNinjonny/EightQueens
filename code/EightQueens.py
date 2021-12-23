@@ -27,7 +27,6 @@ class board(GridLayout):
                 return False
         return True
 
-
     def bruteForce(self, index):
         if index == 8:
             if self.problem not in self.all:
@@ -44,7 +43,6 @@ class board(GridLayout):
         self.problem[index] = -1
         return False
 
-
     def add_board(self):
         for j in range(len(self.problem)):
             for i in range (len(self.problem)):
@@ -58,11 +56,6 @@ class board(GridLayout):
         self.clear_widgets()
         self.add_board()
         self.add_widget(self.button)
-
-
-
-
-
 
 class TestApp(App):
     def build(self):
